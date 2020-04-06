@@ -90,7 +90,9 @@ class App extends React.Component {
   clearList = (event) => {
     event.preventDefault();
     this.setState({
-      existingToDos: this.state.existingToDos.filter((item) => !item.done),
+      existingToDoslist: this.state.existingToDoslist.filter(
+        (newItem) => !newItem.done
+      ),
     });
   };
 
