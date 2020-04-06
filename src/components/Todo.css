@@ -1,0 +1,72 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 0 36px;
+  max-width: 665px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  text-align: left;
+}
+
+.shopping-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+.item {
+  background-color: pink;
+  width: 45%;
+  text-align: left;
+  margin: 4px 0;
+  padding-left: 8px;
+  cursor: pointer;
+  border: 2px solid #8bc3f0;
+}
+
+.item.done {
+  background-color: #8bc3f0;
+  text-decoration: line-through;
+}
+form {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+form > input {
+  background-color: pink;
+  border: 0;
+  padding: 6px 0;
+  font-size: 1rem;
+  width: 240px;
+  outline: 0;
+  color: black;
+  border: 2px solid#8bc3f0;
+  margin-right: 8px;
+}
+
+button {
+  background-color: #8bc3f0;
+  border: 2px solid #8bc3f0;
+  color: white;
+  font-size: 16px;
+  padding: 6px 14px;
+}
+
+input::placeholder {
+  color: #8bc3f0;
+  opacity: 1;
+}
+
+.clear-btn {
+  margin-top: 16px;
+  margin-left: 20px;
+}
