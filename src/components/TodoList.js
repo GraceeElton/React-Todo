@@ -13,7 +13,9 @@ const TodoList = (props) => {
       {props.existingToDos.map((item) => (
         <Todo key={item.id} item={item} toggleItem={props.toggleItem} />
       ))}
-      <button onClick={props.clearList}>Clear To-Do List</button>
+      <button className="clear-btn" onClick={props.clearList}>
+        Clear To-Do List
+      </button>
     </div>
   );
 };

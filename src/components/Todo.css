@@ -1,9 +1,12 @@
+.holder {
+  background-image: url(https://images.unsplash.com/photo-1531875456634-3f5418280d20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+}
+
 .App {
-  font-family: sans-serif;
   text-align: center;
   padding: 0 36px;
-  max-width: 665px;
   margin: 0 auto;
+  height: 930px;
 }
 
 .header {
@@ -11,8 +14,9 @@
   justify-content: space-between;
   align-items: center;
 }
-h1 {
-  text-align: left;
+h2 {
+  text-align: center;
+  font-size: 40px;
 }
 
 .shopping-list {
@@ -40,9 +44,11 @@ form {
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  margin-left: 155px;
+  padding: 16px;
 }
 form > input {
-  background-color: pink;
+  background-color: rgb(253, 237, 240);
   border: 0;
   padding: 6px 0;
   font-size: 1rem;
@@ -68,5 +74,9 @@ input::placeholder {
 
 .clear-btn {
   margin-top: 16px;
-  margin-left: 20px;
+  margin-left: 600px;
+}
+
+button:hover {
+  color: pink;
 }

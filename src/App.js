@@ -99,16 +99,18 @@ class App extends React.Component {
   render() {
     console.log("rendering form");
     return (
-      <div className="App">
-        <div className="header"></div>
-        <h2>Welcome to your To-do App!</h2>
-        <TodoForm addNewItem={this.addNewItem} />
+      <div className="holder">
+        <div className="App">
+          <div className="header"></div>
+          <h2>Welcome to your To-do App!</h2>
+          <TodoForm addNewItem={this.addNewItem} />
 
-        <ToDoList
-          existingToDos={this.state.existingToDoslist}
-          toggleItem={this.toggleItem}
-          clearList={this.clearList}
-        />
+          <ToDoList
+            existingToDos={this.state.existingToDoslist}
+            toggleItem={this.toggleItem}
+            clearList={this.clearList}
+          />
+        </div>
       </div>
     );
   }
